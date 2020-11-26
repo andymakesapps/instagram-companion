@@ -135,7 +135,7 @@ def main():
             except:
                 pass
         
-        for user_to_follow in igcomp.get_followers_list("artofvisuals"):
+        for user_to_follow in igcomp.get_followers_list(username):
             try:
                 igcomp.follow_user(user_to_follow)
                 igcomp.like_photots(user_to_follow)
